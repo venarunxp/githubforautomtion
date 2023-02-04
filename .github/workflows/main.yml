@@ -37,3 +37,7 @@ jobs:
         run: |
             cd hai
             appium-doctor
+      - name: get Appium driver list
+        run: |
+            cd hai
+            appium driver list --updates
