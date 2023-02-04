@@ -9,3 +9,7 @@ jobs:
    steps:
       - name: Run a one-line script
         run: echo Hello, world!
+      - name: Run inline script
+        run: |
+          mkdir hai
+          ls -l
