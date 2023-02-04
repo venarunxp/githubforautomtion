@@ -14,8 +14,10 @@ jobs:
           mkdir hai
           ls -l
       - name: Run install node
-        run: cd hai
+        run: |
+             cd hai
              npm install hai
-      - name: Run inline script
-        run: cd hai
-             npm -v
+      - name: get node version script
+        run: |
+            cd hai
+            node --version
