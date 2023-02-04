@@ -5,6 +5,7 @@ on: push
 jobs: 
   Selenium_test:    
    runs-on:  macos-latest
-      
-    steps:
-      -run: echo "helloworld"
+   
+   steps:
+      - name: Run a one-line script
+        run: echo Hello, world!
