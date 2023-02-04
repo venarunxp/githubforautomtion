@@ -21,3 +21,7 @@ jobs:
         run: |
             cd hai
             node --version
+      - name: install Appium script
+        run: |
+            cd hai
+            npm install -g appium
