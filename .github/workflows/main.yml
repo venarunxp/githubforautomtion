@@ -19,10 +19,15 @@ jobs:
       - name: get folder details
         run: |
             cd Users
+            ls -l
             cd runner
+            ls -l
             cd Library
+            ls -l
             cd Android
+            ls -l
             cd sdk
+            ls -l
             cd platform-tools
             ls -l
       - name: Run install node
