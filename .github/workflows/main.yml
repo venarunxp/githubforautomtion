@@ -40,3 +40,4 @@ jobs:
       - name: get Appium driver
         run: |
             emulator -list-avds
+            xcrun simctl list
