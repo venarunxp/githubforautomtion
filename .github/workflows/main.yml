@@ -43,3 +43,4 @@ jobs:
       - name:  avd launch
         run:  |
             appium
+            appium driver list
