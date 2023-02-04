@@ -5,9 +5,7 @@ on: push
 jobs: 
   Selenium_test:    
    runs-on:  macos-latest
-   strategy:
-      matrix:
-        api-level: [29]
+
    
    steps:
       - name: Run a one-line script
@@ -19,7 +17,7 @@ jobs:
           
       - name: get folder details
         run: |
-            sdkmanager --install "system-images;android-30;google_atd;arm64-v8a"
+            sdkmanager --list | grep system-images
            
       - name: Run install node
         run: |
