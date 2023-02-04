@@ -37,7 +37,8 @@ jobs:
         run: |
             cd hai
             appium-doctor
-      - name: get Appium driver list
+      - name: get Appium driver
         run: |
             cd hai
-            appium driver list --updates
+            appium driver install xcuitest
+            appium driver install uiautomator2
