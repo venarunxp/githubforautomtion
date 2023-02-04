@@ -40,6 +40,9 @@ jobs:
       - name: get Appium driver
         run: |
             xcrun simctl list
+      - name:  avd launch
+        run:  |
+            emulator -avd emulator-5554
       - name: checkout
         uses: actions/checkout@v3
       - name: run tests
