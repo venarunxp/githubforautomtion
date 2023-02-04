@@ -1,0 +1,10 @@
+name: step1
+
+on: push
+
+jobs: 
+  Selenium_test:    
+   runs-on:  macos-latest
+      
+    steps:
+      -run: echo "helloworld"
