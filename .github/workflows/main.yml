@@ -43,4 +43,5 @@ jobs:
       - name:  avd launch
         run:  |
             appium
+            pkill -9 -f appium
             appium driver list
