@@ -18,7 +18,7 @@ jobs:
           ls -l
       - name: get folder details
         run: |
-            cd Users
+            cd runner
             ls -l
            
       - name: Run install node
