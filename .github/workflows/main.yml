@@ -12,7 +12,6 @@ jobs:
       - name: Run inline script
         run: |
          touch ~/.android/repositories.cfg 
-         brew install --cask caskroom/versions/java8
          brew install --cask android-sdk
          brew cask install intel-haxm
           brew install qt
