@@ -29,3 +29,11 @@ jobs:
         run: |
             cd hai
             appium --version
+      - name: install Appium Doctor
+        run: |
+            cd hai
+            npm install appium-doctor -g
+      - name: get Appium Doctor deatils
+        run: |
+            cd hai
+            appium-doctor
