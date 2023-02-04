@@ -38,4 +38,5 @@ jobs:
             cd hai
             appium-doctor
       - name: get Appium driver
-        run: emulator -list-avds
+        run: |
+            emulator -list-avds
