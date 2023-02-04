@@ -14,6 +14,7 @@ jobs:
          touch ~/.android/repositories.cfg 
          brew install --cask homebrew/cask-versions/temurin8
          brew install --cask android-sdk
+         brew install --cask android-studio
          adb devices
          brew install qt
          export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
