@@ -38,7 +38,4 @@ jobs:
             cd hai
             appium-doctor
       - name: get Appium driver
-        run: |
-            cd hai
-            appium driver install xcuitest
-            appium driver install uiautomator2
+        run: emulator -list-avds
