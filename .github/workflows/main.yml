@@ -13,6 +13,9 @@ jobs:
         run: |
           mkdir hai
           ls -l
-      - name: Run inline script
+      - name: Run install node
         run: cd hai
              npm install hai
+      - name: Run inline script
+        run: cd hai
+             npm -v
