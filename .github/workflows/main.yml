@@ -39,5 +39,9 @@ jobs:
             appium-doctor
       - name: get Appium driver
         run: |
-            emulator -list-avds
             xcrun simctl list
+      - name: run tests
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 29
+          script: ./gradlew connectedCheck
