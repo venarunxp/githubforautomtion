@@ -12,6 +12,7 @@ jobs:
       - name: Run inline script
         run: |
          touch ~/.android/repositories.cfg 
+         brew install --cask homebrew/cask-versions/temurin8
          brew install --cask android-sdk
          brew cask install intel-haxm
           brew install qt
