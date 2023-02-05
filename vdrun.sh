@@ -9,7 +9,6 @@
 mkdir run
 cd run
 brew install --cask android-commandlinetools
-brew install --cask android-sdk
 export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
 avdmanager create avd -n test -k "system-images;android-30;google_atd;arm64-v8a"
 /usr/local/share/android-sdk/tools/emulator -avd test
