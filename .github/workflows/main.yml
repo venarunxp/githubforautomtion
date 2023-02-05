@@ -3,12 +3,12 @@ name: step1
 on: push
 
 jobs:
-  build:
-    runs-on: macos-latest
-   
+  run_tests:
+    runs-on: ubuntu-20.04
     steps:
-      - run: |
-         mkdir andsdk
-         cd andsdk
-         brew install --cask android-commandlinetools
-         avdmanager create avd -n test -k "system-images;android-30;google_atd;arm64-v8a"
+    - uses: actions/checkout@v2
+    - name: Run script file
+      run: |
+         chmod +x ./public/scripts/test.sh
+         ./public/scripts/test.sh
+      shell: bash
