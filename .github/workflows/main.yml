@@ -8,7 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run script file
-      run: |
+      run: | 
          chmod +x ./vdrun.sh
          ./vdrun.sh
       shell: bash
