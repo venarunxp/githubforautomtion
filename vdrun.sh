@@ -9,7 +9,7 @@
 mkdir run
 cd run
 brew install --cask android-sdk
-cd /usr/local/share/android-sdk
+cd /usr/local/bin/emulator
 ls -l
 adb devices
 exit 0
