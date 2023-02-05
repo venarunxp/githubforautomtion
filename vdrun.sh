@@ -10,8 +10,7 @@ mkdir run
 cd run
 brew install --cask caskroom/versions/java8
 brew install --cask android-sdk
-export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
-avdmanager create avd -n test -k "system-images;android-30;google_atd;arm64-v8a"
-/usr/local/share/android-sdk/emulator/emulator -avd test
+cd /usr/local/share/android-sdk/emulator/emulator
+-ls l
 adb devices
 exit 0
