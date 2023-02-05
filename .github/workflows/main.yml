@@ -13,4 +13,6 @@ jobs:
         working-directory: ${{ env.working-directory }}
 
     steps:
-      - run: pwd # will respect working-directory
+      - run: |
+         cd ${{ env.working-directory }}
+         pwd # will respect working-directory
