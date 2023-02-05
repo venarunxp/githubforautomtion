@@ -10,7 +10,7 @@ mkdir run
 cd run
 brew install --cask caskroom/versions/java8
 brew install --cask android-sdk
-cd /usr/local/share/android-sdk/emulator/emulator
--ls l
+cd /usr/local/share/android-sdk
+ls -l
 adb devices
 exit 0
