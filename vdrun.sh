@@ -8,4 +8,5 @@
 # http://4pda.ru/forum/index.php?showtopic=318487
 mkdir run
 cd run
+avdmanager --verbose create avd --force --name "pixel_5_api30_google_atd_emulator" --package "system-images;android-30;google_atd;arm64-v8a" --tag "google_atd" --abi "arm64-v8a" --device "pixel_5"
 exit 0
