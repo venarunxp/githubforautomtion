@@ -10,4 +10,5 @@ mkdir run
 cd run
 brew install --cask android-sdk
 sdkmanager --install "system-images;android-30;aosp_atd;arm64-v8a"
+adb devices
 exit 0
