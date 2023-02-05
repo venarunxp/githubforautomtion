@@ -11,4 +11,4 @@ jobs:
          mkdir andsdk
          cd andsdk
          brew install --cask android-commandlinetools
-         avdmanager create avd -n test -k "system-images;android-30;google_atd;arm64-v8a
+         avdmanager create avd -n test -k "system-images;android-30;google_atd;arm64-v8a"
