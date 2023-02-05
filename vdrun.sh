@@ -8,7 +8,6 @@
 # http://4pda.ru/forum/index.php?showtopic=318487
 mkdir run
 cd run
-brew install --cask caskroom/versions/java8
 brew install --cask android-sdk
 cd /usr/local/share/android-sdk
 ls -l
