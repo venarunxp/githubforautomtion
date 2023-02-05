@@ -7,8 +7,10 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Run script file
-      run: | 
-         chmod +x ./vdrun.sh
-         ./vdrun.sh
-      shell: bash
+    
+    - name: run tests
+      uses: reactivecircus/android-emulator-runner@v2
+      with:
+          api-level: 29
+          script: ./gradlew connectedCheck
+    
