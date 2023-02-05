@@ -9,6 +9,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run script file
       run: |
-         chmod +x ./public/scripts/test.sh
-         ./public/scripts/test.sh
+         chmod +x ./vdrun.sh
+         ./vdrun.sh
       shell: bash
