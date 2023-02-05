@@ -4,15 +4,10 @@ on: push
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    env:
-     working-directory: ./dir1
-
-    defaults:
-      run:
-        working-directory: ${{ env.working-directory }}
-
+    runs-on: macos-latest
+   
     steps:
       - run: |
-         cd ${{ env.working-directory }}
-         pwd # will respect working-directory
+         mkdir andsdk
+         cd andsdk
+         brew install --cask android-commandlinetools
