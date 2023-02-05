@@ -5,17 +5,17 @@ on: push
 jobs: 
   Selenium_test:    
    runs-on:  macos-latest
+  
+  steps:
+  - uses: actions/checkout@v3
 
-   
-   steps:
-      
-      - name: Run inline script
-        run: |
-         brew install --cask android-commandlinetools
-         avdmanager --verbose create avd --force --name "pixel_5_api30_google_atd_emulator" --package "system-images;android-30;google_atd;arm64-v8a" --tag "google_atd" --abi "arm64-v8a" --device "pixel_5"
-         adb devices
-         brew install qt
-         export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
-          sdkmanager "platform-tools" "platforms;android-27" "extras;intel;Hardware_Accelerated_Execution_Manager" "build-tools;27.0.0" "system-images;android-27;google_apis;x86" "emulator"
-          avdmanager create avd -n test -k "system-images;android-27;google_apis;x86"
-          /usr/local/share/android-sdk/tools/emulator -avd test
+  - name: Set up JDK 1.8
+  uses: actions/setup-java@v3
+  with:
+    java-version: 1.8
+
+  - name: Setup Android SDK
+   uses: android-actions/setup-android@v2
+
+  - name: Build SampleApplication
+    run: ./gradlew --no-daemon build
