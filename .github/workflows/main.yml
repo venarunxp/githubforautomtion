@@ -8,7 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - name: run tests
+    - name: run tests 
       uses: reactivecircus/android-emulator-runner@v2
       with:
           api-level: 29
